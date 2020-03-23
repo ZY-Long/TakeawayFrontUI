@@ -4,7 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using BLL;
+using log4net;
 using SDK;
+using Newtonsoft.Json;
 
 namespace TakeawayFrontUI.Controllers
 {
@@ -14,7 +16,7 @@ namespace TakeawayFrontUI.Controllers
         // 注册页面
         public ActionResult Index()
         {
-
+            GetProvince(new ProvinceRequest { });
             return View();
         }
 
@@ -28,6 +30,16 @@ namespace TakeawayFrontUI.Controllers
 
         //    return Json(userBll.AddUser(userAddRequest));
         //}
+
+        /// <summary>
+        /// 获取省份信息,用作绑定下拉框
+        /// </summary>
+        /// <param name="province"></param>
+        /// <returns></returns>
+        public JsonResult GetProvince(ProvinceRequest province)
+        {
+            return Json(userBll.GetProvince(province));
+        }
 
     }
 }

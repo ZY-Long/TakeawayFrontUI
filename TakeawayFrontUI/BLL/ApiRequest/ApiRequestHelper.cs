@@ -81,6 +81,8 @@ namespace BLL
                 //2.请求的参数
                 //3.具体的请求错误信息
                 //4.请求的时间
+                
+                LogHelper.WriteLog(ex.Message.ToString(), ex);
                 return new TResponse { State = false, Message = ex.Message };
             }
 
