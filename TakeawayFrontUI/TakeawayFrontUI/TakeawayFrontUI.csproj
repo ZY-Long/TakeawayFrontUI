@@ -53,7 +53,7 @@
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="SDK">
-      <HintPath>..\..\..\lib\SDK.dll</HintPath>
+      <HintPath>D:\大实训1\项目\Takeaway_Api\SDK\bin\Debug\SDK.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
