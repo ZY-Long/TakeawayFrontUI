@@ -11,6 +11,7 @@ namespace Api.Controllers.购物车相关
 {
     public class TakeController : ApiController
     {
+        [HttpPost]
         public TakeResponse GetTakeInfos()
         {
             TakeResponse response = new TakeResponse();

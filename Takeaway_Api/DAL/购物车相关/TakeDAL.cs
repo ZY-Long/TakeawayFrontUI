@@ -19,6 +19,7 @@ namespace DAL
         /// 2.用一个List<int>存储这个获取到的Id
         /// 3.foreach嵌套访问数据库语句
         /// </summary>
+        
         public int DeleteCart(int id)
         {
             connection.Open();

@@ -11,6 +11,7 @@ namespace Api
 {
     public class DeleteCartController : ApiController
     {
+        [HttpPost]
         public DeleteCartResponse DeleteCare(int id)
         {
             DeleteCartResponse response = new DeleteCartResponse();
