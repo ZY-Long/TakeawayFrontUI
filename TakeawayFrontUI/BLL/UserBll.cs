@@ -11,6 +11,18 @@ namespace BLL
     public class UserBll
     {
 
+        public TakeResponse GetTake(TakeRequest request)
+        {
+            return ApiRequestHelper.Post<TakeRequest, TakeResponse>(request);
+        }
+        public GetCartResponse GetCart(GetCartRequest request)
+        {
+            return ApiRequestHelper.Post<GetCartRequest, GetCartResponse>(request);
+        }
+        public DeleteCartResponse GetProvince(DeleteCartRequest request)
+        {
+            return ApiRequestHelper.Post<DeleteCartRequest, DeleteCartResponse>(request);
+        }
         ///// <summary>
         ///// 添加用户
         ///// </summary>
