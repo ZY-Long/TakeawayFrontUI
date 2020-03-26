@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SDK
 {
-    public class ShowResponse : BaseResponse
+    public class ShowMenuInfoResponse : BaseResponse
     {
         /// <summary>
         /// 当前页码

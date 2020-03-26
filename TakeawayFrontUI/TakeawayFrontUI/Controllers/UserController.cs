@@ -20,6 +20,10 @@ namespace TakeawayFrontUI.Controllers
             return View();
         }
 
+        public JsonResult (ProvinceRequest province)
+        {
+            return Json(userBll.GetProvince(province));
+        }
         ///// <summary>
         ///// 用户注册
         ///// </summary>

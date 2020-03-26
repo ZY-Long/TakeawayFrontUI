@@ -55,7 +55,7 @@
     <Compile Include="TakeawayApi\TakeawayRequest\用户相关\UserRequest.cs" />
     <Compile Include="TakeawayApi\TakeawayRequest\订单相关\GenerateOrderRequest.cs" />
     <Compile Include="TakeawayApi\TakeawayRequest\订单相关\OrderRequest.cs" />
-    <Compile Include="TakeawayApi\TakeawayRequest\菜品展示相关\ShowRequest.cs" />
+    <Compile Include="TakeawayApi\TakeawayRequest\菜品展示相关\ShowMenuInfoRequest.cs" />
     <Compile Include="TakeawayApi\TakeawayRequest\用户相关\ZhaopwdRequest.cs" />
     <Compile Include="TakeawayApi\TakeawayRequest\购物车相关\DeleteCartRequest.cs" />
     <Compile Include="TakeawayApi\TakeawayRequest\购物车相关\GetCartRequest.cs" />
@@ -76,7 +76,7 @@
     <Compile Include="TakeawayApi\TakeawayResponse\用户相关\UpdateResponse.cs" />
     <Compile Include="TakeawayApi\TakeawayResponse\用户相关\UserInfoResponse.cs" />
     <Compile Include="TakeawayApi\TakeawayResponse\用户相关\ZhaopwdResponse.cs" />
-    <Compile Include="TakeawayApi\TakeawayResponse\菜品展示相关\ShowResponse.cs" />
+    <Compile Include="TakeawayApi\TakeawayResponse\菜品展示相关\ShowMenuInfoResponse.cs" />
     <Compile Include="TakeawayApi\TakeawayResponse\订单相关\GenerateOrderResponse.cs" />
     <Compile Include="TakeawayApi\TakeawayResponse\订单相关\OrderResponse.cs" />
     <Compile Include="TakeawayApi\TakeawayResponse\购物车相关\DeleteCartResponse.cs" />
