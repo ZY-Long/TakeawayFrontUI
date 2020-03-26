@@ -8,7 +8,7 @@ using SDK;
 
 namespace BLL
 {
-    public class UserBll
+    public class UserBLL
     {
         /// <summary>
         /// 口味下拉框

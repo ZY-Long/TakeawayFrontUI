@@ -10,7 +10,7 @@ namespace TakeawayFrontUI.Controllers
 {
     public class ShowCartInfoController : Controller
     {
-        UserBll bll = new UserBll();
+        UserBLL bll = new UserBLL();
         // GET: ShowCartInfo
         public ActionResult Index()
         {
