@@ -3,23 +3,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SDK;
 
+using SDK;
 
 namespace BLL
 {
     public class UserBll
     {
-
+        /// <summary>
+        /// 口味下拉框
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         public TakeResponse GetTake(TakeRequest request)
         {
             return ApiRequestHelper.Post<TakeRequest, TakeResponse>(request);
         }
+        /// <summary>
+        /// 显示购物车
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         public GetCartResponse GetCart(GetCartRequest request)
         {
             return ApiRequestHelper.Post<GetCartRequest, GetCartResponse>(request);
         }
-        public DeleteCartResponse GetProvince(DeleteCartRequest request)
+        /// <summary>
+        /// 删除菜品
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
+        public DeleteCartResponse DeleteCart(DeleteCartRequest request)
         {
             return ApiRequestHelper.Post<DeleteCartRequest, DeleteCartResponse>(request);
         }

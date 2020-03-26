@@ -19,10 +19,32 @@ namespace TakeawayFrontUI.Controllers
             GetProvince(new ProvinceRequest { });
             return View();
         }
-
-        public JsonResult (ProvinceRequest province)
+        /// <summary>
+        /// 下拉框显示
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
+        public JsonResult GetTake(TakeRequest request)
         {
-            return Json(userBll.GetProvince(province));
+            return Json(userBll.GetTake(request));
+        }
+        /// <summary>
+        /// 显示购物车
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
+        public JsonResult GetCart(GetCartRequest request)
+        {
+            return Json(userBll.GetCart(request));
+        }
+        /// <summary>
+        /// 删除菜品
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
+        public JsonResult DeleteCart(DeleteCartRequest request)
+        {
+            return Json(userBll.DeleteCart(request));
         }
         ///// <summary>
         ///// 用户注册

@@ -32,7 +32,7 @@ namespace DAL
         /// 显示购物车
         /// </summary>
         /// <returns></returns>
-        public List<CartDetails> ShowCartDetails()
+        public List<CartDetails> GetCartInfos()
         {
             connection.Open();
             string sql = @"select m.Name,m.Img,m.Price from CartDetails as c
