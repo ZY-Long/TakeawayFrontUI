@@ -35,7 +35,7 @@ namespace TakeawayFrontUI.Controllers
         /// <returns></returns>
         public JsonResult GetCart(GetCartRequest request)
         {
-            return Json(userBll.GetCart(request));
+            return Json(userBll.GetCart(request), JsonRequestBehavior.AllowGet);
         }
         /// <summary>
         /// 删除菜品
