@@ -16,6 +16,7 @@ namespace TakeawayFrontUI.Controllers
         {
             return View();
         }
+        [HttpPost]
         public JsonResult GetTake(TakeRequest request)
         {
             return Json(bll.GetTake(request));
@@ -25,15 +26,21 @@ namespace TakeawayFrontUI.Controllers
         /// </summary>
         /// <param name="request"></param>
         /// <returns></returns>
+        public ActionResult GetCart()
+        {
+            return View();
+        }
+        [HttpPost]
         public JsonResult GetCart(GetCartRequest request)
         {
-            return Json(bll.GetCart(request), JsonRequestBehavior.AllowGet);
+            return Json(bll.GetCart(request));
         }
         /// <summary>
         /// 删除菜品
         /// </summary>
         /// <param name="request"></param>
         /// <returns></returns>
+        [HttpPost]
         public JsonResult DeleteCart(DeleteCartRequest request)
         {
             return Json(bll.DeleteCart(request));
